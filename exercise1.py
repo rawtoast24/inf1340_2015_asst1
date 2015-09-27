@@ -7,11 +7,15 @@ after the stock transactions
 
 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
-
-
-money = 1000.00
+__author__ = 'Mib_Ani'
+share_count=2000
+buy_value=900
+total_investment=(share_count*buy_value)*1.03
+sell_value=942.75
+total_sold_amount=(share_count*sell_value)*.97
+money = total_sold_amount-total_investment
+if money > 0:
+    print 'Lakshmi is having Profit'
+else:
+    print 'Lakshmi is having Loss'
 print(money)
