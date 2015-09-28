@@ -15,7 +15,7 @@ sell_value=942.75
 total_sold_amount=(share_count*sell_value)*.97
 money = total_sold_amount-total_investment
 if money > 0:
-    print 'Lakshmi is having Profit'
+    print 'Lakshmi made a profit'
 else:
-    print 'Lakshmi is having Loss'
+    print 'Lakshmi made a loss'
 print(money)
