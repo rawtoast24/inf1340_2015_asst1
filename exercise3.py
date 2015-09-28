@@ -7,10 +7,8 @@ interactive diagnose car issues.
 
 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
+__author__ = 'Mib_Ani'
+
 
 
 def diagnose_car():
@@ -26,7 +24,7 @@ def diagnose_car():
     Errors: "User input not recognized. Please enter y or n for each question"
 
     """
-    error = "User input not recognized. Please enter y or n for each question."
+    error = "User input not recognized. Please enter y or n for each question(Please enter in lowercase)."
     carSilent = raw_input("Is the car silent when you turn the key? Please answer using y or n.")
     if carSilent == "n":
         clickingNoise = raw_input("Does the car make a clicking noise? Please answer using y or n.")
