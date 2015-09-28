@@ -24,25 +24,25 @@ def diagnose_car():
     Errors: "User input not recognized. Please enter y or n for each question"
 
     """
-    error = "User input not recognized. Please enter y or n for each question(Please enter in lowercase)."
+    error = "User input not recognized. Please enter y  or n for each question(Input is case insensitive)."
     carSilent = raw_input("Is the car silent when you turn the key? Please answer using y or n.")
-    if carSilent == "n":
+    if carSilent in ["n","N"] :
         clickingNoise = raw_input("Does the car make a clicking noise? Please answer using y or n.")
-        if clickingNoise == "y":
+        if clickingNoise in ["y","Y"]:
             print("Replace the battery.")
-        elif clickingNoise == "n":
+        elif clickingNoise in ["n","N"]:
             crankButFail = raw_input("Does the car crank up but fail to start? Please answer using y or n.")
-            if crankButFail == "y":
+            if crankButFail in ["y","Y"]:
                 print("Check spark plug connections.")
-            elif crankButFail == "n":
+            elif crankButFail in ["n","N"]:
                 engineDie = raw_input("Does the engine start and then die? Please answer using y or n.")
-                if engineDie == "n":
+                if engineDie in ["n","N"]:
                     print("Engine is not getting enough fuel. Please clean fuel pump.")
-                elif engineDie == "y":
+                elif engineDie in ["y","Y"]:
                     fuelInjection = raw_input("Does your car have fuel injection? Please answer using y or n.")
-                    if fuelInjection == "y":
+                    if fuelInjection in ["y","Y"]:
                         print("Get it in for service.")
-                    elif fuelInjection == "n":
+                    elif fuelInjection in  ["n","N"]:
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print(error)
@@ -52,11 +52,11 @@ def diagnose_car():
                 print(error)
         else:
             print(error)
-    elif carSilent == "y":
+    elif carSilent in ["y","Y"]:
         batteryTerminal = raw_input("Are the battery terminals corroded? Please answer using y or n.")
-        if batteryTerminal == "n":
+        if batteryTerminal in  ["n","N"]:
             print("The battery cables may be damaged. Replace cables and try again.")
-        elif batteryTerminal == "y":
+        elif batteryTerminal in ["y","Y"]:
             print("The terminals may be dirty. Clean terminals and try again.")
         else:
             print(error)
