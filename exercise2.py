@@ -22,22 +22,23 @@ def name_that_shape():
 
     """
     askUser = raw_input("How many sides does your shape have? Please specify the count in numerals.")
+    askUser = int(float(askUser))
 
-    if askUser == "3":
+    if askUser == 3:
         print "Triangle"
-    elif askUser == "4":
+    elif askUser == 4:
         print "Quadrilateral"
-    elif askUser == "5":
+    elif askUser == 5:
         print "Pentagon"
-    elif askUser == "6":
+    elif askUser == 6:
         print "Hexagon"
-    elif askUser == "7":
+    elif askUser == 7:
         print "Heptagon"
-    elif askUser == "8":
+    elif askUser == 8:
         print "Octagon"
-    elif askUser == "9":
+    elif askUser == 9:
         print "Nonagon"
-    elif askUser == "10":
+    elif askUser == 10:
         print "Decagon"
     else:
         print "Error"
