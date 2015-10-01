@@ -16,15 +16,16 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: y,n
+    Inputs: y,n,Y,N
 
     Expected Outputs: "Clean terminals and try starting again", "Replace cables and try again", "Replace the battery",
-    Check spark plug connections", "Check to ensure the choke opening and closing", "Get it in for service"
+    "Check spark plug connections", "Check to ensure the choke opening and closing", "Get it in for service",
+    "Engine is not getting enough fuel. Please clean fuel pump"
 
     Errors: "User input not recognized. Please enter y or n for each question"
 
     """
-    error = "User input not recognized. Please enter y  or n for each question(Input is case insensitive)."
+    error = "User input not recognized. Please enter y or n for each question."
     carSilent = raw_input("Is the car silent when you turn the key? Please answer using y or n.")
     if carSilent in ["n","N"] :
         clickingNoise = raw_input("Does the car make a clicking noise? Please answer using y or n.")
