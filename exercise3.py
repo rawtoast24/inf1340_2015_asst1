@@ -16,7 +16,7 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: y,n,Y,N
+    Inputs: Y or N(The input is case insensitive)
 
     Expected Outputs: "Clean terminals and try starting again", "Replace cables and try again", "Replace the battery",
     "Check spark plug connections", "Check to ensure the choke opening and closing", "Get it in for service",
