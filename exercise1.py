@@ -4,6 +4,7 @@
 
 This module prints the amount of money that Lakshmi has remaining
 after the stock transactions
+ If the left over money is greater than zero lakshmi made a profit otherwise she had loss in the business
 
 """
 
