@@ -2,7 +2,7 @@
 
 """ Assignment 1, Exercise 1, INF1340, Fall, 2014. Grade to gpa conversion
 
-This module prints the amount of money that Lakshmi has remaining
+This module prints the amount of money left with Lakshmi
 after the stock transactions
  If the left over money is greater than zero lakshmi made a profit otherwise she had loss in the business
 
