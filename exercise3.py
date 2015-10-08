@@ -10,7 +10,7 @@ interactive diagnose car issues.
 __author__ = 'Mib_Ani'
 
 
-
+# Created function to diagnose car problems by walking user through a decision tree
 def diagnose_car():
     """
     Interactively queries the user with yes/no questions to identify a
@@ -31,6 +31,8 @@ def diagnose_car():
     Errors: "User input not recognized. Please enter Y or N for each question"
 
     """
+# Error message created in case user doesn't enter Y,Y, N, or n at any instance
+
     error = "User input not recognized. Please enter Y or N for each question."
     carSilent = raw_input("Is the car silent when you turn the key? Please answer using Y or N.")
     if carSilent in ["n","N"] :
@@ -69,4 +71,4 @@ def diagnose_car():
             print(error)
     else:
         print(error)
-#diagnose_car()
+diagnose_car()
