@@ -38,12 +38,12 @@ def diagnose_car():
             elif crankButFail in ["n","N"]:
                 engineDie = raw_input("Does the engine start and then die? Please answer using y or n.")
                 if engineDie in ["n","N"]:
-                    print("Engine is not getting enough fuel. Please clean fuel pump.")
+                    print("Engine is not getting enough fuel. Clean fuel pump.")
                 elif engineDie in ["y","Y"]:
                     fuelInjection = raw_input("Does your car have fuel injection? Please answer using y or n.")
                     if fuelInjection in ["y","Y"]:
                         print("Get it in for service.")
-                    elif fuelInjection in  ["n","N"]:
+                    elif fuelInjection in ["n","N"]:
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print(error)
@@ -56,11 +56,11 @@ def diagnose_car():
     elif carSilent in ["y","Y"]:
         batteryTerminal = raw_input("Are the battery terminals corroded? Please answer using y or n.")
         if batteryTerminal in  ["n","N"]:
-            print("The battery cables may be damaged. Replace cables and try again.")
+            print("Replace cables and try again.")
         elif batteryTerminal in ["y","Y"]:
-            print("The terminals may be dirty. Clean terminals and try again.")
+            print("Clean terminals and try starting again.")
         else:
             print(error)
     else:
         print(error)
-diagnose_car()
+#diagnose_car()#
