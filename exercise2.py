@@ -16,11 +16,14 @@ def name_that_shape():
 
     Inputs: The number of sides( 3, 4, 5, 6, 7, 8, 9, 10)
 
-    Expected Outputs: Triangle, Quadrilateral, Pentagon, Hexagon, Heptagon, Octagon, Nonagon, Decagon
+    Expected Outputs: triangle, quadrilateral, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
     Errors: less than 3 or greater than 10 sides
 
     """
+
+#Asks user for the number of sides their shape has and returns the name of tha shape
+
     askUser = raw_input("How many sides does your shape have? Please specify the count in numerals.")
 
     if askUser == "3":
