@@ -42,8 +42,6 @@ def name_that_shape():
     else:
         print "Error"
 
-<<<<<<< Updated upstream
-#name_that_shape()#
-=======
+
 #name_that_shape()
->>>>>>> Stashed changes
+
