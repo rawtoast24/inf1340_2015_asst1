@@ -22,7 +22,7 @@ def name_that_shape():
 
     """
 
-#Asks user for the number of sides their shape has and returns the name of tha shape
+#Asks user for the number of sides their shape has and returns the name of that shape
 
     askUser = raw_input("How many sides does your shape have? Please specify the count in numerals.")
 
@@ -42,6 +42,7 @@ def name_that_shape():
         print "nonagon"
     elif askUser == "10":
         print "decagon"
+#Prints error if the user enters a number of sides less than 3 or greater than 10
     else:
         print "Error"
 
