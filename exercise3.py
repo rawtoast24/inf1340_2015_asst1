@@ -71,4 +71,4 @@ def diagnose_car():
             print(error)
     else:
         print(error)
-diagnose_car()
+#diagnose_car()
