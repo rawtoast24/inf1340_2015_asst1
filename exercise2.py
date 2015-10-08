@@ -25,21 +25,21 @@ def name_that_shape():
     askUser = int(float(askUser))
 
     if askUser == 3:
-        print "Triangle"
+        print "triangle"
     elif askUser == 4:
-        print "Quadrilateral"
+        print "quadrilateral"
     elif askUser == 5:
-        print "Pentagon"
+        print "pentagon"
     elif askUser == 6:
-        print "Hexagon"
+        print "hexagon"
     elif askUser == 7:
-        print "Heptagon"
+        print "heptagon"
     elif askUser == 8:
-        print "Octagon"
+        print "octagon"
     elif askUser == 9:
-        print "Nonagon"
+        print "nonagon"
     elif askUser == 10:
-        print "Decagon"
+        print "decagon"
     else:
         print "Error"
 
