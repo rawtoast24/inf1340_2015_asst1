@@ -18,8 +18,11 @@ def diagnose_car():
 
     Inputs: Y or N(The input is case insensitive)
 
-    Expected Outputs: Y,Y == "Clean terminals and try starting again"; Y,N == "Replace cables and try again";
-    N,Y == "Replace the battery"; N,N,Y == "Check spark plug connections";
+    Expected Outputs:
+    Y,Y == "Clean terminals and try starting again";
+    Y,N == "Replace cables and try again";
+    N,Y == "Replace the battery";
+    N,N,Y == "Check spark plug connections";
     N,N,N,N == "Engine is not getting enough fuel. Please clean fuel pump";
     N,N,N,Y,N == "Check to ensure the choke opening and closing";
     N,N,N,Y,Y =="Get it in for service"
@@ -66,4 +69,4 @@ def diagnose_car():
             print(error)
     else:
         print(error)
-#diagnose_car()#
+#diagnose_car()
